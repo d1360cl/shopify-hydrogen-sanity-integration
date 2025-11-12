@@ -67,10 +67,6 @@ export default function Product() {
         {Array.isArray(initial?.body) ? (
           <PortableText value={initial.body} />
         ) : null}
-        <p>
-          <strong>Description</strong>
-          <p className="text-xl">{description}</p>
-        </p>
       </div>
       <Analytics.ProductView
         data={{
