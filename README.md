@@ -2,6 +2,11 @@
 
 This project now integrates **Shopify** with **Sanity CMS** to provide a headless commerce solution with flexible content management.
 
+### Integration
+
+- This Hydrogen Storefront loads 1 featured collection on index with product data being loaded from Shopify storefront API.
+- Also on the PDP loads product data from Sanity Studio synchronized with Shopify. To check this you can navigate to a product page or check the product route code.
+
 ### Features
 
 - **Product Data from Sanity**: Product information, descriptions, and content are fetched from Sanity CMS
@@ -16,12 +21,6 @@ The integration follows a hybrid approach:
 - **Content Layer**: Sanity CMS manages product content, descriptions, and rich media
 - **Commerce Layer**: Shopify Storefront API handles product availability, pricing, and checkout
 - **Data Loading**: Product pages fetch data from both sources, with Sanity providing the content context and Shopify providing the commerce functionality
-
-### Getting Started with Sanity
-
-1. Ensure you have a Sanity project set up with product content
-2. Configure your Sanity dataset and project ID in your environment variables
-3. The PDP routes will automatically load product data from Sanity when available
 
 # Hydrogen template: Skeleton
 
