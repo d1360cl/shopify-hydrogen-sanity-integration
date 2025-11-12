@@ -4,7 +4,7 @@ import type {
   CartApiQueryFragment,
   FooterQuery,
   HeaderQuery,
-} from 'storefrontapi.generated';
+} from '@/storefrontapi.generated';
 import {Aside} from '~/components/Aside';
 import {Footer} from '~/components/Footer';
 import {Header, HeaderMenu} from '~/components/Header';
@@ -45,7 +45,7 @@ export function PageLayout({
           publicStoreDomain={publicStoreDomain}
         />
       )}
-      <main>{children}</main>
+      <main className="flex w-full">{children}</main>
       <Footer
         footer={footer}
         header={header}

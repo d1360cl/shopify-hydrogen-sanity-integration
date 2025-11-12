@@ -339,50 +339,14 @@ button.reset:hover:not(:has(> *)) {
   align-items: center;
   gap: 1rem;
 }
-
-/*
-* --------------------------------------------------
-* routes/__index
-* --------------------------------------------------
-*/
-.featured-collection {
-  display: block;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.featured-collection-image {
-  aspect-ratio: 1 / 1;
-  @media (min-width: 45em) {
-    aspect-ratio: 16 / 9;
-  }
-}
-
-.featured-collection img {
-  height: auto;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.recommended-products-grid {
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
-  @media (min-width: 45em) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.recommended-product img {
-  height: auto;
-}
-
-/*
-* --------------------------------------------------
-* routes/collections._index.tsx
-* --------------------------------------------------
-*/
-.collections-grid {
+*
+  --------------------------------------------------
+  *
+  routes/collections._index.tsx
+  *
+  --------------------------------------------------
+  */
+  .collections-grid {
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(var(--grid-item-width), 1fr));
